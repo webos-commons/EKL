@@ -1,0 +1,10 @@
+{
+	"id": "com.ekl.list.virtuallist",
+	"version": "1.0.0",
+	"vendor": "EKL",
+	"type": "web",
+	"main": "index.html",
+	"title": "EKL VirtualList",
+	"icon": "icon.png",
+	"uiRevision": 2
+}
