@@ -1,4 +1,4 @@
-EKL - Enyo Component Library
+EKL - Enyo Kind Library
 ============================
 
 A collection of Enyo kinds (components) as well as core Enyo extensions for use
