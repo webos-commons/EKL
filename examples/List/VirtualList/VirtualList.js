@@ -6,7 +6,7 @@ enyo.kind({
 		{kind: "WebService", url: "data/canonDbList_dbService.json", onSuccess: "queryResponse", onFailure: "queryFail"},
 		{kind: "PageHeader", content: "Virtual List Example"},
 		{kind: "Button", caption: "Load Data", onclick: "loadData"},
-		{flex: 1, name: "list", kind: "ekl.List.VirtualList", className: "list", onSetupRow: "listSetupRow", components: [
+		{flex: 1, name: "list", kind: "ekl.List.VirtualList", mousewheelDamp: 0.25, className: "list", onSetupRow: "listSetupRow", components: [
 			{kind: "Divider"},
 			{kind: "Item", className: "item", components: [
 				{kind: "HFlexBox", components: [

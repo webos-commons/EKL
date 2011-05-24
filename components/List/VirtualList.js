@@ -3,18 +3,20 @@ enyo.kind({
     kind: enyo.VirtualList,
     
     published: {
-        mousescroll: true
+        mousewheel: true,
+        //Dampens mousewheel delta strength
+        mousewheelDamp: 1.0
     },
     events: {
     },
     
     mousewheelHandler: function(inSender, inEvent) {
-        if (this.mousescroll) {
+        if (this.mousewheel) {
             //Clone event
             var dragTo = enyo.mixin({}, inEvent);
             //Apply delta to new event
-            dragTo.pageX = inEvent.pageX + inEvent.delta.x;
-            dragTo.pageY = inEvent.pageY + inEvent.delta.y;
+            dragTo.pageX = inEvent.pageX + (inEvent.delta.x * this.mousewheelDamp);
+            dragTo.pageY = inEvent.pageY + (inEvent.delta.y * this.mousewheelDamp);
 
             //Simulate initiating a drag
             this.$.scroller.$.scroll.startDrag(inEvent);
