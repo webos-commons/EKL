@@ -13,4 +13,4 @@ All components are licensed under the MIT license and may be freely used and
 distributed in any open source and commercial applications. If at all possible
 it is requested that you credit any components used.
 
-Enyo is currently under NDA.
+ENYO LICENSE HERE
