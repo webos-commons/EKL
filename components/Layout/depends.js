@@ -1,4 +1,5 @@
 enyo.depends(
     "SlidingPane.js",
-    "SlidingView.js"
+    "SlidingView.js",
+    "ScrollBarsScroller.js"
 );
